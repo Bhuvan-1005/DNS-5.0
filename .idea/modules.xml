@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/DNS-5.0.iml" filepath="$PROJECT_DIR$/.idea/DNS-5.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Data Structures and Algorithm/Data Structures and Algorithm.iml" filepath="$PROJECT_DIR$/Data Structures and Algorithm/Data Structures and Algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Design Pattern/Design Pattern.iml" filepath="$PROJECT_DIR$/Design Pattern/Design Pattern.iml" />
+    </modules>
+  </component>
+</project>
