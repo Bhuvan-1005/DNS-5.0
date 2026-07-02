@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="department" class="com.exercise2.Department">
+        <constructor-arg value="10"/>
+        <constructor-arg value="Engineering"/>
+    </bean>
+
+    <bean id="employeeConstructor" class="com.exercise2.Employee">
+        <constructor-arg value="1"/>
+        <constructor-arg value="Alice"/>
+        <property name="department" ref="department"/>
+    </bean>
+
+    <bean id="employeeSetter" class="com.exercise2.Employee">
+        <constructor-arg value="2"/>
+        <constructor-arg value="Bob"/>
+        <property name="department">
+            <bean class="com.exercise2.Department">
+                <constructor-arg value="20"/>
+                <constructor-arg value="Marketing"/>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="employeeAutowired" class="com.exercise2.Employee" autowire="byType">
+        <constructor-arg value="3"/>
+        <constructor-arg value="Charlie"/>
+    </bean>
+
+</beans>
